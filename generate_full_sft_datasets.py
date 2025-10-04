@@ -6,8 +6,10 @@ Generates complete datasets with robust checkpointing
 import os
 import sys
 
-# Set API key FIRST before any imports
-os.environ["LLM_GW_EXPRESS_KEY"] = "sk-luetTdDFsOqFF1CyIIMUpw"
+# Load API key from environment variable (set locally, not in code!)
+# Usage: export LLM_GW_EXPRESS_KEY="your_api_key_here"
+if "LLM_GW_EXPRESS_KEY" not in os.environ:
+    raise ValueError("LLM_GW_EXPRESS_KEY environment variable not set. Please set it before running.")
 
 import json
 import time

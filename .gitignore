@@ -9,6 +9,11 @@ secrets/
 .modal/
 modal_cache/
 
+# Data generation artifacts
+full_sft_datasets/
+full_checkpoints/
+data_generation_log.txt
+
 # Python
 __pycache__/
 *.py[cod]
